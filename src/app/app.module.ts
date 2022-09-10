@@ -10,6 +10,7 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { MenuEntrarComponent } from './menu-entrar/menu-entrar.component';
 import { MenuCadastrarComponent } from './menu-cadastrar/menu-cadastrar.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { HashLocationStrategy, LocationStrategy } from "@angular/common";
 
 
 @NgModule({
@@ -25,7 +26,12 @@ import { InicioComponent } from './inicio/inicio.component';
     BrowserModule,
     AppRoutingModule,HttpClientModule,FormsModule
   ],
-  providers: [],
+
+  providers: [{
+     provide:LocationStrategy,
+     useClass: HashLocationStrategy
+  }],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

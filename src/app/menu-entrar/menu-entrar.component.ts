@@ -40,14 +40,12 @@ export class MenuEntrarComponent implements OnInit {
 
 
       this.userLogin.foto
-
-      this.router.navigate(["/inicio"])
-
-    }, erro => {
-      if (erro.status == 500) {
+      this.router.navigate(['/inicio'])
+    }, erro =>{
+      if(erro.status == 500){
         alert('Usuário ou senha estão incorretos!')
       }
     })
-
   }
+
 }
