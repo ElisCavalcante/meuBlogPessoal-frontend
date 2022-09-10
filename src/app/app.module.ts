@@ -11,6 +11,7 @@ import { MenuEntrarComponent } from './menu-entrar/menu-entrar.component';
 import { MenuCadastrarComponent } from './menu-cadastrar/menu-cadastrar.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { HashLocationStrategy, LocationStrategy } from "@angular/common";
+import { TemaComponent } from './tema/tema.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { HashLocationStrategy, LocationStrategy } from "@angular/common";
     RodapeComponent,
     MenuEntrarComponent,
     MenuCadastrarComponent,
-    InicioComponent
+    InicioComponent,
+    TemaComponent
   ],
   imports: [
     BrowserModule,

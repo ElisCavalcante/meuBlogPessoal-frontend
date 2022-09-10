@@ -19,44 +19,45 @@
                     <!-- Button trigger modal -->
                     <button class="btn btn-primary mr-2" data-toggle="modal" data-target="#modal-mensagem">
                         Nova Postagem
-                        </button>
+                    </button>
 
                     <!-- Modal -->
                     <div class="modal fade" id="modal-mensagem">
                         <div class="modal-dialog">
-                             <div class="modal-content">
-                                 <div class="modal-header">
- 
-                                     <h4 class="modal-title">Escreva sua postagem</h4>
-                                 </div>
-                                 <div class="modal-body">
-                                     <div class="form-group">
+                            <div class="modal-content">
+                                <div class="modal-header">
+
+                                    <h4 class="modal-title">Escreva sua postagem</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group">
                                         <label for="titulo">Titulo</label>
-                                        <input type="text" class="form-control" id="titulo" placeholder="Digite o titulo">
-                                     </div>
+                                        <input type="text" class="form-control" id="titulo"
+                                            placeholder="Digite o titulo">
+                                    </div>
 
-                                     <div class="form-group">
+                                    <div class="form-group">
                                         <label for="texto">Texto</label>
-                                      <textarea class="form-control" name="texto" id="texto" rows="3"></textarea>
-                                     </div>
+                                        <textarea class="form-control" name="texto" id="texto" rows="3"></textarea>
+                                    </div>
 
-                                     <div class="form-group">
-                                        <label for="texto">Escolha um tema ou  <a href="">cadastre um novo!</a>:  </label>
-                                     <select class="form-control" name="tema" id="tema ">
+                                    <div class="form-group">
+                                        <label for="texto">Escolha um tema ou <a data-dismiss="modal" routerLink="/tema">cadastre um novo!</a>: </label>
+                                        <select class="form-control" name="tema" id="tema ">
 
-                                        <option value="">Temas </option>
-                                     </select>
-                                     </div>
+                                            <option value="">Temas </option>
+                                        </select>
+                                    </div>
 
 
-                                 </div>
-                                 <div class="modal-footer">
-                                     <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                                     <button type="button" class="btn btn-default" data-dismiss="modal">Postar</button>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                    <button type="button" class="btn btn-info" data-dismiss="modal">Postar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Fim modal -->
                     <a class="btn btn-outline-primary" href="#postagens">Ver postagens</a>
 
